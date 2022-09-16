@@ -31,3 +31,37 @@ img {
   max-width: 100%;
   height: auto;
 }
+.title {
+  font-family: $basic;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  color: $text-color;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {  
+    font-size: 42px;
+    line-height: 1.16;
+  }
+}
+.container {
+  min-width: 250px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  // outline: 2px solid tomato;
+
+  @media screen and (min-width: 480px) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: $tablet;
+  }
+  @media screen and (min-width: 1200px) {
+    width: $desktop;
+  }
+}
