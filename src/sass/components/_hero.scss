@@ -1,0 +1,14 @@
+.mySwiper {
+    display: none;
+
+    @media screen and (min-width: $tab) {
+    display: block;
+    width: 336px;
+    height: 320px;
+    }
+
+    @media screen and (min-width: $desk) {
+    width: 608px;
+    height: 580px;
+    }
+}
