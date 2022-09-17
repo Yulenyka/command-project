@@ -10,7 +10,7 @@
   flex-direction: column-reverse;
   height: 78px;
   margin-bottom: 17px;
-  background-image: url('../images/subscribe-mob-1x.png');
+  background-image: url('../images/subscribe/subscribe-mob-1x.png');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 161px 78px;
@@ -19,24 +19,24 @@
     screen and (o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/subscribe-mob-2x.png');
+    background-image: url('../images/subscribe/subscribe-mob-2x.png');
   }
   @media (min-device-pixel-ratio: 1),
     screen and (o-min-device-pixel-ratio: 1/1),
     screen and (min-resolution: 96dpi),
     screen and (min-resolution: 1dppx) {
-    background-image: url('../images/subscribe-mob-1x.webp');
+    background-image: url('../images/subscribe/subscribe-mob-1x.webp');
   }
   @media (min-device-pixel-ratio: 2),
     screen and (o-min-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/subscribe-mob-2x.webp');
+    background-image: url('../images/subscribe/subscribe-mob-2x.webp');
   }
 
   @media screen and (min-width: $tab) {
     margin-bottom: 20px;
-    background-image: url('../images/subscribe-tab-1x.png');
+    background-image: url('../images/subscribe/subscribe-tab-1x.png');
     background-size: 281px 136px;
     background-position: top right;
     height: 136px;
@@ -44,29 +44,47 @@
       screen and (o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/subscribe-tab-2x.png');
+      background-image: url('../images/subscribe/subscribe-tab-2x.png');
     }
     @media (min-device-pixel-ratio: 1),
       screen and (o-min-device-pixel-ratio: 1/1),
       screen and (min-resolution: 96dpi),
       screen and (min-resolution: 1dppx) {
-      background-image: url('../images/subscribe-tab-1x.webp');
+      background-image: url('../images/subscribe/subscribe-tab-1x.webp');
     }
     @media (min-device-pixel-ratio: 2),
       screen and (o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/subscribe-tab-2x.webp');
+      background-image: url('../images/subscribe/subscribe-tab-2x.webp');
     }
   }
 
   @media screen and (min-width: $desk) {
     margin-bottom: 0px;
-    background-image: url('../images/subscribe-desk-1x.png');
+    background-image: url('../images/subscribe/subscribe-desk-1x.png');
     background-size: 608px 266px;
     background-position: top right;
     height: 266px;
     width: 50%;
+    @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/subscribe/subscribe-desk-2x.png');
+    }
+    @media (min-device-pixel-ratio: 1),
+      screen and (o-min-device-pixel-ratio: 1/1),
+      screen and (min-resolution: 96dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: url('../images/subscribe/subscribe-desk-1x.webp');
+    }
+    @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/subscribe/subscribe-desk-2x.webp');
+    }
   }
 }
 .subscribe__item {
