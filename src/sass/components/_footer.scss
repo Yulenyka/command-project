@@ -1,0 +1,264 @@
+.footer {
+    // padding-top: 60px;
+    // padding-bottom: 60px;
+    background-image: url('../images/footer/bcgmob1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @media screen and (max-width: $mob) {
+        // min-width: 768px;
+        // height: 506px;
+            background-image: url('../images/footer/bcgmob1x.jpg');
+        }
+
+    @media screen and (min-width: $tab) {
+        // min-width: 768px;
+        // height: 506px;
+        background-image: url('../images/footer/bcgtab1x.jpg');
+    }
+
+    // @media screen and (min-width: $desk) {
+    //     // min-width: 1280px;
+    //     // height: 395px;
+    //     background-image: url('../images/footer/bcgdesk1x.jpg');
+    // }
+}
+
+// @media screen and (max-width: $mob) {
+
+//   @media screen and (min-device-pixel-ratio: 2),
+//   screen and (--webkit-min-device-pixel-ratio: 2),
+//   screen and (-o-min-device-pixel-ratio: 2/1),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//     .footer {
+//       background-image: url('../images/footer/bcgmob2x.jpg');
+//     }
+//   }
+// }
+
+// @media screen and (min-width: $mob) {
+
+//   @media screen and (min-device-pixel-ratio: 2),
+//   screen and (--webkit-min-device-pixel-ratio: 2),
+//   screen and (-o-min-device-pixel-ratio: 2/1),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//     .footer {
+//       background-image: url('../images/footer/bcgmob2x.jpg');
+//     }
+//   }
+// }
+
+// @media screen and (min-width: $tab) {
+
+//   @media screen and (min-device-pixel-ratio: 2),
+//   screen and (--webkit-min-device-pixel-ratio: 2),
+//   screen and (-o-min-device-pixel-ratio: 2/1),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//     .footer {
+//       background-image: linear-gradient(var(--gradient-hero), var(--gradient-hero)),
+//         url('../images/footer/bcgtab2x.jpg');
+//     }
+//   }
+// }
+
+// @media screen and (min-width: $tab) {
+
+//   @media screen and (min-device-pixel-ratio: 2),
+//   screen and (--webkit-min-device-pixel-ratio: 2),
+//   screen and (-o-min-device-pixel-ratio: 2/1),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//     .footer {
+//       background-image: linear-gradient(var(--gradient-hero), var(--gradient-hero)),
+//         url('../images/footer/bcgdesk2x.jpg');
+//     }
+//   }
+// }
+
+.footer-navigation {
+    display: flex;
+}
+
+.footer-navigation__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+        @media screen and (min-width: $tab) {
+            display: flex;
+            flex-direction: inherit;
+            align-items: center;
+            margin-bottom: 0;
+        }
+}
+
+.footer-navigation__svg {
+    @media screen and (min-width: $tab) {
+        margin-right: 114px;
+        margin-bottom: 40px;
+    } 
+}
+
+
+.footer-navigation__item {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.footer-navigation__item:not(:last-child) {
+    margin-bottom: 20px;
+
+       @media screen and (min-width: $tab) {
+        margin-bottom: 0;
+        margin-right: 28px;
+    } 
+}
+
+.subscribe-form {
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.subscribe-form__title {
+    margin-bottom: 12px;
+    color: $text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;  
+}
+
+.subscribe-form__submit {
+    display: flex;
+    flex-direction: column;
+     
+    @media screen and (min-width: $tab) {
+        margin-bottom: 12px;
+        flex-direction: initial;
+    }
+}
+
+.subscribe-form__input {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding: 12px 12px;
+    width: 100%;
+    height: 42px;
+    color: $secondary-text-color;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    background: $primery-color;
+    border: 0.854167px solid $main-color;
+    border-radius: 30px;
+
+    @media screen and (min-width: $tab) {
+        width: 279px;
+        margin-right: 13px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}
+
+.subscribe-form__btn {
+    width: 103px;
+    height: 42px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 11px 22px;
+    color: $text-color;
+    font-weight: 500;
+    font-size: 13px;  
+    line-height: 1.54;
+    text-align: center;
+    background: $primery-color;
+    border: 0.854167px solid $secondary-color;
+    border-radius: 30px;
+
+    @media screen and (min-width: $tab) {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}
+
+.subscribe-form__label {
+    color: $text-color;
+    font-weight: 400;
+    font-size: 12px; 
+    line-height: 1.17;
+    
+    @media screen and (min-width: $mob) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $tab) {
+        margin-bottom: 100px;
+    }
+}
+
+.subscribe-form__label--link {
+    color: $secondary-color;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    text-decoration-line: underline;
+}
+
+.extra-information {
+    @media screen and (min-width: $tab) {
+        display: flex;
+    }
+}
+
+.extra-information__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: $tab) {
+    justify-content: flex-start;
+    margin-right: 0;
+    margin-left: 0;
+    }
+}
+
+.extra-information__item {
+    margin-bottom: 40px;
+    color: $secondary-color;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    text-decoration-line: underline;    
+}
+
+.extra-information__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.extra-information__copyright {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: $text-color;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+
+    @media screen and (min-width: $tab) {
+        text-align: right;
+    }
+}
