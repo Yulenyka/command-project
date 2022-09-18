@@ -130,6 +130,7 @@
 
         @media screen and (min-width: $desk) {
             margin-right: 320px;
+            margin-left: 148px;
         }
 }
 
@@ -140,6 +141,7 @@
 
 .footer-navigation__item {
     color: rgba(0, 0, 0, 1);
+    font-family: $basic;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
@@ -169,6 +171,7 @@
 .subscribe-form__title {
     margin-bottom: 12px;
     color: $text-color;
+    font-family: $basic;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
@@ -188,10 +191,11 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;
-    padding: 12px 12px;
+    padding-left: 12px;
     width: 100%;
     height: 42px;
     color: $secondary-text-color;
+    font-family: $basic;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.5;
@@ -199,6 +203,17 @@
     background: $primery-color;
     border: 0.854167px solid $main-color;
     border-radius: 30px;
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: $secondary-color;
+    }
+    
+    &:invalid {
+        border-color: #ff705d;
+    }
 
     @media screen and (min-width: $tab) {
         width: 279px;
@@ -208,33 +223,14 @@
     }
 }
 
-// .subscribe-form__input:valid {
-//     border: 0.854167px solid $secondary-color;
-// }
-
-// .subscribe-form__submit input[type=text] {
-//     border: 0.854167px solid #FF705D;
-// }
-
-// .subscribe-form__input:invalid {
-//     border: 0.854167px solid #FF705D;
-// }
-
-.error-message {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.5;
-    color: #FF705D;
-}
-
 .subscribe-form__btn {
     width: 103px;
     height: 42px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: 0;
-    padding: 11px 22px;
     color: $text-color;
+    font-family: $basic;
     font-weight: 500;
     font-size: 13px;  
     line-height: 1.54;
@@ -258,6 +254,7 @@
 
 .subscribe-form__label {
     color: $text-color;
+    font-family: $basic;
     font-weight: 400;
     font-size: 12px; 
     line-height: 1.17;
@@ -273,6 +270,7 @@
 
 .subscribe-form__label--link {
     color: $secondary-color;
+    font-family: $basic;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -304,6 +302,7 @@
 
 .extra-information__item {
     color: $secondary-color;
+    font-family: $basic;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -319,6 +318,7 @@
     margin-right: auto;
     margin-left: auto;
     color: $text-color;
+    font-family: $basic;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
