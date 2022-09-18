@@ -15,9 +15,12 @@
 
 .customers-review{
     padding: 8px;
-    margin-bottom: 24px;
     background: #FFFFFF;
     border-radius: 0px 30px 30px 30px;
+    
+    @media screen and (max-width:$tab){
+    margin-bottom: 24px;
+    }
 
     @media screen and (min-width:$desk){
         width: 501px;
