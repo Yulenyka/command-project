@@ -127,7 +127,7 @@ img {
 @media screen and (min-width: 767.98px) {
   .intro {
     font-size: 16px;
-    line-height: 1.18;
+    line-height: 1.5;
   }
 }
 @media screen and (min-width: 1279.98px) {
@@ -150,5 +150,66 @@ img {
   .mySwiper {
     width: 608px;
     height: 580px;
+  }
+}
+
+.favorites {
+  text-align: center;
+  height: 1064px;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .favorites {
+    overflow: visible;
+  }
+}
+
+.favorites__title {
+  margin-bottom: 20px;
+}
+
+.favorites__intro {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .favorites__intro {
+    margin-bottom: 40px;
+  }
+}
+
+.favorites__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .favorites__list {
+    gap: 30px;
+  }
+}
+
+.favorites__item {
+  outline: 1px red solid;
+  width: 223.29px;
+  border: 11px solid #FFE550;
+  border-radius: 139.658px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .favorites__item {
+    width: calc((100% - 32px) / 2);
+    max-width: 267.95px;
+    background: #FEFEFE;
+    border: 14px solid #FFE550;
+    border-radius: 167.166px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .favorites__item {
+    width: calc((100% - 64px) / 3);
   }
 }/*# sourceMappingURL=index.css.map */
