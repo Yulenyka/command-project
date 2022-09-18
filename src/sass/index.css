@@ -239,10 +239,12 @@ img {
 
 .subscribe__title {
   line-height: 1.21;
+  width: 280px;
 }
 @media screen and (min-width: 767.98px) {
   .subscribe__title {
     line-height: 1.19;
+    width: 100%;
   }
 }
 
