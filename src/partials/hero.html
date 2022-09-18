@@ -1,21 +1,68 @@
 <section class="headerbar">
-  <div class="container">
-    <div>
-      <h1 class="headerbar__title">Тут буде Hero</h1>
-      <p class="headerbar__intro intro"></p>
+  <div class="container headerbar__section">
+    <div class="headerbar__test">
+      <h1 class="headerbar__title">Enjoy Your Favorite Food From Anywhere</h1>
+      <div class="headerbar__info">
+      <p class="headerbar__intro intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+      <button data-modal-open class="headerbar__button" type="button"  >Order Now</button>
     </div>
+  </div>
     <div class="swiper mySwiper" >
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">
+          <!-- <a class="swiper__img-link" href="#" target="_blank"  rel="noreferrer noopener" aria-label="aria"> -->
+          <picture>
+            <source srcset="./images/headerbar/slide-1-tab.png 1x, ./images/headerbar/slide-1-tab@x2.png 2x" 
+                    media="(max-width: 1279px)"
+                    type="image/png"
+                    />
+            <source srcset="./images/headerbar/slide-1-desk.png 1x, ./images/headerbar/slide-1-desk@x2.png 2x" 
+                    media="(min-width: 1280px)" 
+                    type="image/png"
+                    />
+            <img src="./images/headerbar/slide-1-desk.png" alt="slider1" height="528px" width="528px"/>
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="./images/headerbar/slide-2-tab.png 1x, ./images/headerbar/slide-2-tab@x2.png 2x" 
+                    media="(max-width: 1279px)"
+                    type="image/png"
+                    />
+            <source srcset="./images/headerbar/slide-2-desk.png 1x, ./images/headerbar/slide-2-desk@x2.png 2x" 
+                    media="(min-width: 1280px)" 
+                    type="image/png"
+                    />
+              <img src="./images/headerbar/slide-2-desk.png" alt="slider1" height="528px" width="528px"/>
+          </picture> 
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="./images/headerbar/slide-3-tab.png 1x, ./images/headerbar/slide-3-tab@x2.png 2x" 
+                    media="(max-width: 1279px)"
+                    type="image/png"
+                    />
+            <source srcset="./images/headerbar/slide-3-desk.png 1x, ./images/headerbar/slide-3-desk@x2.png 2x" 
+                    media="(min-width: 1280px)" 
+                    type="image/png"
+                    />
+              <img src="./images/headerbar/slide-3-desk.png" alt="slider1" height="528px" width="528px"/>
+          </picture>
+        </div>
       </div>
       <!-- If we need navigation buttons -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-
+      <div class="swiper-button-prev">
+        <svg class="about__icon" width="40" height="48">
+          <use href="./images/headerbar/symbol.svg#icon-arrow-left-desk"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg class="about__icon" width="40" height="48">
+          <use href="./images/headerbar/symbol.svg#icon-arrow-right-desk"></use>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
