@@ -31,33 +31,23 @@
 
             // Варіант зі фоном по контейнеру
 .container--offerings{
-    @media screen and (max-width: 320px){
-        background-image: url(../images/mobbg@1x.png);
+        background-position: top center;
         background-repeat: no-repeat;
-        padding-top: 41px;
+        background-size: cover;
+    @media screen and (max-width: 320px){
+        background-image: url(../images/offerings/mobbg@1x.png);
     }
     @media screen and (min-width: 321px) and (max-width: 479px){
-        background-image: url(../images/mobbg480@1x.png);
-        background-repeat: no-repeat;
-        padding-top: 41px;
+        background-image: url(../images/offerings/mobbg480@1x.png);
         }
     @media screen and (min-width: $mob){
-        background-image: url(../images/mobbg480@1x.png);
-        background-repeat: no-repeat;  
-        padding-top: 41px;
+        background-image: url(../images/offerings/mobbg480@1x.png);
     }
     @media screen and (min-width: $tab)  {
-        background-image: url(../images/tabbg@1x.png);
-        background-repeat: no-repeat;
-        padding-top: 150px;}
-
+        background-image: url(../images/offerings/tabbg@1x.png);
+    }
     @media screen and (min-width: $desk) {
-    background-image: url(../images/deskbg@1x.png);
-    background-repeat: no-repeat;
-    padding-top: 117px;
-    display: flex;
-    gap: 90px;
-    align-items: center;
+    background-image: url(../images/offerings/deskbg@1x.png);
     }}
 
 @media screen and (max-width: 320px) {
@@ -68,7 +58,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         .container--offerings {
-            background-image:url(../images/mobbg@2x.png);
+            background-image:url(../images/offerings/mobbg@2x.png);
         }
     }
 }
@@ -79,7 +69,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         .container--offerings {
-            background-image: url(../images/mobbg480@2x.png);
+            background-image: url(../images/offerings/mobbg480@2x.png);
         }
     }
 }
@@ -91,7 +81,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         .container--offerings {
-            background-image: url(../images/mobbg480@2x.png);
+            background-image: url(../images/offerings/mobbg480@2x.png);
 }}}
 @media screen and (min-width: $tab) {
     @media screen and (min-device-pixel-ratio: 2),
@@ -100,7 +90,7 @@
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             .container--offerings {
-            background-image: url(../images/tabbg@2x.png);
+            background-image: url(../images/offerings/tabbg@2x.png);
 }}}
 
 @media screen and (min-width: $desk) {
@@ -110,8 +100,25 @@
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             .container--offerings{
-            background-image: url(../images/deskbg@2x.png);
+            background-image: url(../images/offerings/deskbg@2x.png);
 }}}
+.offerings__position{
+    @media screen and (max-width: 320px)and (min-width: 321px) and (max-width: 479px){
+        padding-top: 41px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: $tab) {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        }
+    @media screen and (min-width: $desk) {
+        padding-top: 177px;
+        padding-bottom: 43px;
+        display: flex;
+        gap: 90px;
+        align-items: center;
+         }
+}
 .offerings__wrapper{
     @media screen and (min-width: $desk){
         width: 50%;
@@ -121,17 +128,17 @@
     display: flex;
     margin-bottom: 60px;
     height: 309px;
-    background-image: url(../images/apple320@1x.png);
+    background-image: url(../images/offerings/apple320@1x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 280px 309px;
 @media screen and (min-width: $tab){
-    background-image: url(../images/appletab@1x.png);
+    background-image: url(../images/offerings/appletab@1x.png);
     height: 394px;
     background-size: 704px 394px;
 }
 @media screen and (min-width: $desk) {
-    background-image: url(../images/appledesk@1x.png);
+    background-image: url(../images/offerings/appledesk@1x.png);
     height: 604px;
     background-size: 550px 604px;
     width: 50%;
@@ -145,7 +152,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         .offerings__decor {
-            background-image: url(../images/apple320@2x.png);
+            background-image: url(../images/offerings/apple320@2x.png);
         }
     }
 }
@@ -157,7 +164,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         .offerings__decor {
-            background-image: url(../images/appletab@2x.png);
+            background-image: url(../images/offerings/appletab@2x.png);
         }
     }
 }
@@ -169,17 +176,20 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         .offerings__decor {
-            background-image: url(../images/appledesk@2x.png);
+            background-image: url(../images/offerings/appledesk@2x.png);
         }
     }
 }
-
 .offerings__title{
     margin-bottom: 28px;
     max-width: 280px;
 @media screen and (min-width: $tab){
     max-width: 526px;
     margin-bottom: 20px;
+    line-height: 1.16;
+}
+@media screen and (min-width: $desk){
+    line-height: 1.19;
 }
 }
 .offerings__intro{
@@ -187,25 +197,26 @@
     margin-bottom: 28px;
 @media screen and (min-width: $tab) {
     width: 500px;
-    margin-bottom: 40px;
+    line-height: 1.14;
+
 }
 }
 .offerings__list{
     @media screen and (min-width: $tab){
     display: flex;
-    gap: 116px;
-    margin-bottom: 40px;}
+    gap: 116px;}
     @media screen and (min-width: $desk){
-    margin-bottom: 32px;
     gap: 67px;
     }
 }
 .offerings__item{
     width: 252px;
     margin-bottom: 28px;
+@media screen and (min-width: $tab){
+    margin-bottom: 40px;}
 @media screen and (min-width: $desk){
-    width: calc((100% - 67px)/2)
-}
+    width: calc((100% - 67px)/2);
+    margin-bottom: 32px;}
 }
 .offerings__icon{
     display: block;
@@ -215,14 +226,28 @@
 }
 .offerings__subtitle {
     margin-bottom: 16px;
+    font-family: $basic;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    color: $text-color;
+@media screen and (min-width: $desk){
+    line-height: 1.39;
+}
+}
+.offerings__text {
+    @media screen and (min-width: $desk){
+    line-height: 1.14;
+    }
 }
 .offerings__communication{
     display: flex;
     gap: 24px;
 }
 .offerings__button{
-        padding: 10px 22px;
-        min-width: 106px;
+        width: 106px;
+        height: 40px;
         border-radius: 30px;
         border: 2px solid $secondary-color;
         background-color: $primery-color;
@@ -251,5 +276,5 @@ align-items: center;
     height: 15px;
     margin-left: 4px;
     background-size: contain;
-    background-image: url(/src/images/galka.svg);
+    background-image: url(../images/offerings/galka.svg);
 }
