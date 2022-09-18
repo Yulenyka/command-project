@@ -1,0 +1,83 @@
+.customers {
+    background: #FFE550;
+}
+
+.costumer-blocks {
+
+    @media screen and (min-width:$tab){
+    display: flex;
+    }
+}
+
+.customers__intro {
+    margin-bottom: 32px;
+}
+
+.customers-review{
+    padding: 8px;
+    margin-bottom: 24px;
+    background: #FFFFFF;
+    border-radius: 0px 30px 30px 30px;
+
+    @media screen and (min-width:$desk){
+        width: 501px;
+    }
+}
+
+.customers-review:not(:last-child){
+
+    @media screen and (min-width:$tab){
+    margin-right: 32px;
+    }
+
+    @media screen and (min-width:$desk) {
+    margin-right: 139px;
+    }
+}
+
+.customers-review__list{
+    margin-bottom: 28px;
+    display: flex;
+    gap: 4px;
+}
+
+.customers-review__text{
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #2C2C2C;
+
+    @media screen and (min-width:$tab) {
+    font-size: 18px;
+    line-height: 1.16;
+    }
+}
+
+
+.customers-review__person{
+    display: flex;
+    width: 160px;
+    height: 52px;
+    border-right: 0.854167px solid #7EB101;
+}
+
+.customers-review__picture {
+    margin-right: 16px;
+}
+
+
+.customers-review__name {
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2C2C2C;
+}
+
+.customers-review__employment {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2C2C2C;
+}
