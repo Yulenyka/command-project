@@ -113,7 +113,7 @@
         }
     @media screen and (min-width: $desk) {
         padding-top: 177px;
-        padding-bottom: 43px;
+        padding-bottom: 0;
         display: flex;
         gap: 90px;
         align-items: center;
@@ -237,6 +237,8 @@
 }
 }
 .offerings__text {
+    @media screen and (min-width: $tab) {
+    line-height: 1.14}
     @media screen and (min-width: $desk){
     line-height: 1.14;
     }
