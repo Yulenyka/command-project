@@ -336,6 +336,7 @@ img {
   border-color: #BBF330;
 }
 
+
 .container--offerings {
   background-position: top center;
   background-repeat: no-repeat;
@@ -402,12 +403,15 @@ img {
   .offerings__position {
     padding-top: 150px;
     padding-bottom: 100px;
+
   }
 }
 @media screen and (min-width: 1279.98px) {
   .offerings__position {
+
     padding-top: 177px;
     padding-bottom: 0;
+
     display: flex;
     gap: 90px;
     align-items: center;
@@ -475,6 +479,7 @@ img {
 @media screen and (min-width: 1279.98px) {
   .offerings__title {
     line-height: 1.19;
+
   }
 }
 
@@ -582,6 +587,7 @@ img {
   }
 }
 
+
 .offerings__link::after {
   display: inline-block;
   content: "";
@@ -604,7 +610,7 @@ img {
 }
 @media screen and (max-width: 320px) and (min-device-pixel-ratio: 2), screen and (max-width: 320px) and (o-min-device-pixel-ratio: 2/1), screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 320px) and (min-resolution: 192dpi), screen and (max-width: 320px) and (min-resolution: 2dppx) {
   .customers__fon {
-    background-image: url("../images/customers-say/mobile-1x.png");
+    background-image: url("../images/customers-say/mobile-2x.png");
   }
 }
 @media screen and (min-width: 321px) and (max-width: 479px) {
@@ -775,7 +781,7 @@ img {
 }
 @media screen and (min-width: 1279.98px) {
   .subscribe {
-    margin-top: 156px;
+    margin-top: 125px;
   }
 }
 
@@ -948,6 +954,7 @@ img {
   background: #7EB101;
 }
 
+
 .footer--fon {
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -985,6 +992,7 @@ img {
     background-image: url("../images/footer/bcgdesk2x.jpg");
   }
 }
+
 
 @media screen and (max-width: 479.98px) {
   .container.footer-menu {
@@ -1113,7 +1121,10 @@ img {
   margin-left: auto;
   margin-bottom: 20px;
   padding-left: 12px;
-  text-align: left;
+
+ text-align: left;
+
+
 }
 @media screen and (min-width: 767.98px) {
   .subscribe-form__input {
