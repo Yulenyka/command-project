@@ -1,6 +1,11 @@
 .favorites {
   text-align: center;
-  
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: $tab) {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
   @media screen and (max-width: $tab) {
     .favorites__item:not(:nth-child(-n + 3)) {
       display: none;
