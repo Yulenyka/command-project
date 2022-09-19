@@ -1,0 +1,129 @@
+.backdrop {
+    position: fixed;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+}
+
+.backdrop.is-hidden {
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 449px;
+    padding: 32px 20px;
+    background: $main-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+
+    @media screen and (min-width: $tab) {
+        width: 458px;
+        height: 449px;
+        padding: 32px;
+    }
+}
+
+.modal__btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    right: 16px;
+    top: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: $primery-color;
+    cursor: pointer;
+
+    @media screen and (min-width: $tab) {
+        right: 12px;
+        top: 12px;
+        }
+}
+
+.modal-form__title {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: $text-color;
+}
+
+.modal-form__label {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 2px;
+    margin-left: 12px;
+}
+
+.modal-form__input {
+    outline: transparent;
+    width: 280px;
+    height: 48px;
+    border: 1px solid $secondary-color;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    margin-bottom: 24px;
+    padding: 12px 14px;
+    
+    &:hover,
+    &:focus {
+        border: 1px solid $secondary-color;
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.2;
+        color: #C4C4C4;
+    }
+    
+    @media screen and (min-width: $tab) {
+        width: 394px;
+        border: 1px solid rgba(18, 18, 18, 0.12);
+    }
+}
+
+.modal-form__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-color;
+    font-family: $basic;
+    background-color: $primery-color;
+    width: 106px;
+    height: 40px;
+    margin: 8px auto;
+    border: 2px solid $secondary-color;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+}
