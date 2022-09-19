@@ -29,6 +29,11 @@
   background: $primery-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $secondary-color;
+    }
   
   @media screen and (min-width: $desk) {
   top: 50%;
@@ -60,7 +65,7 @@
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 23px;
-  
+
   @media screen and (min-width: $desk) {
   font-size: 35px;
   }
