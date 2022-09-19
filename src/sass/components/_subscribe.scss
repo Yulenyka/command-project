@@ -1,3 +1,13 @@
+.subscribe {
+  margin-top: -10px;
+    padding-top: 0px;
+    @media screen and (min-width: $tab) {
+   margin-top: 36px;
+  }
+      @media screen and (min-width: $desk) {
+   margin-top: 156px;
+  }
+}
 .subscribe__column {
   @media screen and (min-width: $desk) {
     display: flex;

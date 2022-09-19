@@ -1,86 +1,154 @@
+.customers__fon {
+  background-repeat: no-repeat;
+  background-position: top center;
+  @media screen and (max-width: 320px) {
+    background-size: 100% 769px;
+    background-image: url('../images/customers-say/mobile-1x.png');
+    @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/customers-say/mobile-1x.png');
+    }
+  }
+  @media screen and (min-width: 321px) and (max-width: 479px) {
+    background-size: 100% 798px;
+    background-image: url('../images/customers-say/480-1x.png');
+    @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/customers-say/480-2x.png');
+    }
+  }
+
+  @media screen and (min-width: $mob) {
+    background-size: 100% 798px;
+    background-image: url('../images/customers-say/480-1x.png');
+    @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/customers-say/480-2x.png');
+    }
+  }
+  @media screen and (min-width: $tab) {
+    background-size: 100% 554px;
+    background-image: url('../images/customers-say/tablet-1x.png');
+    @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/customers-say/tablet-2x.png');
+    }
+  }
+  @media screen and (min-width: $desk) {
+    background-size: 100% 647px;
+    background-image: url('../images/customers-say/desktop-1x.png');
+    @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/customers-say/desktop-2x.png');
+    }
+  }
+}
 .customers {
-    background: #FFE550;
+  padding-bottom: 0;
+  @media screen and (min-width: $tab) {
+    padding-top: 60px;
+  }
 }
 
-.costumer-blocks {
-
-    @media screen and (min-width:$tab){
+.custumer-blocks {
+  @media screen and (min-width: $tab) {
     display: flex;
-    }
+  }
 }
-
+.customers__title {
+  width: 280px;
+  @media screen and (min-width: $tab) {
+    width: 100%;
+  }
+}
 .customers__intro {
-    margin-bottom: 32px;
+  width: 280px;
+  margin-bottom: 32px;
+  @media screen and (min-width: $tab) {
+    width: 100%;
+  }
 }
 
-.customers-review{
-    padding: 8px;
-    background: #FFFFFF;
-    border-radius: 0px 30px 30px 30px;
-    
-    @media screen and (max-width:$tab){
+.customers-review {
+  width: 280px;
+  padding: 8px;
+  background: #ffffff;
+  border-radius: 0px 30px 30px 30px;
+
+  @media screen and (max-width: $tab) {
     margin-bottom: 24px;
-    }
+  }
 
-    @media screen and (min-width:$desk){
-        width: 501px;
-    }
+  @media screen and (min-width: $desk) {
+    width: 501px;
+    padding: 14px;
+  }
 }
 
-.customers-review:not(:last-child){
-
-    @media screen and (min-width:$tab){
+.customers-review:not(:last-child) {
+  @media screen and (min-width: $tab) {
     margin-right: 32px;
-    }
+  }
 
-    @media screen and (min-width:$desk) {
+  @media screen and (min-width: $desk) {
     margin-right: 139px;
-    }
+  }
 }
 
-.customers-review__list{
-    margin-bottom: 28px;
-    display: flex;
-    gap: 4px;
+.customers-review__list {
+  margin-bottom: 28px;
+  display: flex;
+  gap: 4px;
 }
 
-.customers-review__text{
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.18;
-    color: #2C2C2C;
+.customers-review__text {
+  font-family: $basic;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #2c2c2c;
 
-    @media screen and (min-width:$tab) {
+  @media screen and (min-width: $tab) {
     font-size: 18px;
     line-height: 1.16;
-    }
+  }
 }
 
-
-.customers-review__person{
-    display: flex;
-    width: 160px;
-    height: 52px;
-    border-right: 0.854167px solid #7EB101;
+.customers-review__person {
+  display: flex;
+  width: 160px;
+  height: 52px;
+  border-right: 0.854167px solid #7eb101;
 }
 
 .customers-review__picture {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
-
 .customers-review__name {
-    margin-bottom: 2px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: #2C2C2C;
+  margin-bottom: 2px;
+  font-family: $basic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2c2c2c;
 }
 
 .customers-review__employment {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: #2C2C2C;
+  font-weight: 400;
+  font-family: $basic;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2c2c2c;
 }
