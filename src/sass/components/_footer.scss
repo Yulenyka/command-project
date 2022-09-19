@@ -1,76 +1,63 @@
 .container.footer-menu {
-    align-items: center;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    background-image: url('../images/footer/bcgmob1x.jpg');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media screen and (min-width: $tab) {
-        max-height: 506px;
-        background-image: url('../images/footer/bcgtab1x.jpg');
-    }
-
-    @media screen and (min-width: $desk) {
-        max-height: 395px;
-        background-image: url('../images/footer/bcgdesk1x.jpg');
-    }
-}
-
-@media screen and (max-width: $mob) {
-
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (--webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .container.footer-menu {
-      background-image: url('../images/footer/bcgmob2x.jpg');
+    background-position: top center;
+    @media screen and (max-width: 320px) {
+        background-size: 100% 619px;
+        background-image: url('../images/footer/bcgmob1x.jpg');
+        @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/footer/bcgmob1x.jpg');
     }
   }
-}
 
-@media screen and (min-width: $mob) {
+  @media screen and (min-width: 321px) and (max-width: 479px) {
+      background-size: 100% 619px;
+      background-image: url('../images/footer/bcgmob1x.jpg');
 
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (--webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .container.footer-menu {
-        height: 619px;
-        background-image: url('../images/footer/bcgmob2x.jpg');
-    }
+      @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+          background-image: url('../images/footer/bcgmob2x.jpg');
+      }
   }
-}
 
-@media screen and (min-width: $tab) {
+  @media screen and (min-width: $mob) {
+      background-size: 100% 619px;
+      background-image: url('../images/footer/bcgmob1x.jpg');
 
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (--webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .container.footer-menu {
-        height: 506px;
-        background-image: url('../images/footer/bcgtab2x.jpg');
-    }
+      @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+          background-image: url('../images/footer/bcgmob2x.jpg');
+      }
   }
-}
 
-@media screen and (min-width: $desk) {
+  @media screen and (min-width: $tab) {
+      background-size: 100% 506px;
+      background-image: url('../images/footer/bcgtab1x.jpg');
 
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (--webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .container.footer-menu {
-        height: 395px;
-        background-image: url('../images/footer/bcgdesk2x.jpg');
-    }
+      @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+          background-image: url('../images/footer/bcgtab2x.jpg');
+      }
+  }
+
+  @media screen and (min-width: $desk) {
+      background-size: 100% 395px;
+      background-image: url('../images/footer/bcgdesk1x.jpg');
+
+      @media (min-device-pixel-ratio: 2),
+      screen and (o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+          background-image: url('../images/footer/bcgdesk2x.jpg');
+      }
   }
 }
 
