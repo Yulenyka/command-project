@@ -1,3 +1,52 @@
 <header>
-  <div class="container">Тут буде Header</div>
+  <div class="container">
+    <div class="header-mobile ">
+      <div><svg class="header-logo" width="66" height="52">
+          <use href="./images/header-icons.svg#icon-header-logo"></use>
+        </svg>
+      </div>
+      <button class="open__menu js-open-menu" type="button">
+        <svg class="open-icon" width="28" height="28">
+          <use href="./images/header-icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="mobile-wrap js-menu-container is-open">
+        <nav class="mobile-nav">
+          <button class="close__menu js-close-menu" type=button>
+            <svg class="close-icon" width="11" height="11">
+              <use href="./images/header-icons.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <ul class="mobile__menu--list">
+            <li class="mobile__menu--item"><a class="mobile__menu--link" href="#home">Home</a></li>
+            <li class="mobile__menu--item"><a class="mobile__menu--link" href="#about">About</a></li>
+            <li class="mobile__menu--item"><a class="mobile__menu--link" href="#service">Service</a></li>
+            <li class="mobile__menu--item"><a class="mobile__menu--link" href="#menu">Menu</a></li>
+            <li class="mobile__menu--item"><a class="mobile__menu--link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header-desktop">
+      <div><svg class="header-logo" width="66" height="52">
+          <use href="./images/header-icons.svg#icon-header-logo"></use>
+        </svg>
+      </div>
+      <nav class="desktop-nav">
+        <ul class="desktop__menu--list">
+          <li class="desktop__menu--item-current"><a class="desktop__menu--link" href="#home">Home</a></li>
+          <li class="desktop__menu--item"><a class="desktop__menu--link" href="#about">About</a></li>
+          <li class="desktop__menu--item"><a class="desktop__menu--link" href="#service">Service</a></li>
+          <li class="desktop__menu--item"><a class="desktop__menu--link" href="#menu">Menu</a></li>
+          <li class="desktop__menu--item"><a class="desktop__menu--link" href="#contact">Contact</a></li>
+        </ul>
+        <button class="header-button" type="button">Order Now</button>
+      </nav>
+    </div>
+
+
+
+
+
+  </div>
 </header>
