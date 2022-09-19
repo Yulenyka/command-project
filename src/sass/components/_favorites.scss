@@ -1,5 +1,6 @@
 .favorites {
   text-align: center;
+  
   @media screen and (max-width: $tab) {
     .favorites__item:not(:nth-child(-n + 3)) {
       display: none;
