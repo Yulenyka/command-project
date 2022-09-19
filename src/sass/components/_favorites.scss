@@ -1,10 +1,10 @@
 .favorites {
   text-align: center;
   @media screen and (max-width: $tab) {
-.favorites__item:nth-last-child(-n + 3) {
-display: none;
-}
-}
+    .favorites__item:not(:nth-child(-n + 3)) {
+      display: none;
+    }
+  }
 }
 
 .favorites__title {
@@ -33,7 +33,7 @@ display: none;
 
 .favorites__item {
   width: 280px;
-  height: 282px;
+  height: 280px;
   border: 11px solid $main-color;
   border-radius: 50%;
   display: flex;
@@ -42,21 +42,20 @@ display: none;
 
   @media screen and (min-width: $tab) {
     width: 336px;
-    height: 338px;
+    height: 336px;
     width: calc((100% - 32px) / 2);
     background: $primery-color;
     border: 14px solid $main-color;
-    
   }
 
   @media screen and (min-width: $desk) {
-
-    width: calc((100% - 64px) / 3);
     width: 395px;
-    height: 397px;
+    width: calc((100% - 64px) / 3);
+    height: 395px;
   }
 }
 
-.favorites__item:hover, .favorites__item:focus {
+.favorites__item:hover,
+.favorites__item:focus {
   border: 14px solid $accent-color;
 }
