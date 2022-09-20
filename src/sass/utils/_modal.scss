@@ -92,6 +92,10 @@
     margin-bottom: 24px;
     padding: 12px 14px;
     
+    &:invalid {
+        border-color: #ff705d;
+      }
+
     &:hover,
     &:focus {
         border: 1px solid $secondary-color;
