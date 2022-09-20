@@ -96,6 +96,7 @@
 
   @media screen and (min-width: $tab) {
       width:336px;
+        padding: 12px;
   }
 
   @media screen and (min-width: $desk) {
@@ -135,14 +136,12 @@
 }
 
 .customers-blocks__link{
-  display: flex;
-  width: 160px;
   height: 52px;
-
-
+  display: flex;
 }
 
 .customers-personabout{
+  width: 93px;
   margin-left: 16px;
   display: flex;
   flex-wrap: wrap;
