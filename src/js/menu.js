@@ -12,7 +12,7 @@
 
     openMenuBtn.addEventListener('click', () => {
         toggleMenu();
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = '';
     });
     closeMenuBtn.addEventListener('click', () => {
         toggleMenu();
