@@ -88,7 +88,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 2;
+  z-index: 11;
 }
 
 .backdrop.is-hidden {
@@ -114,7 +114,7 @@
   border-radius: 30px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 10;
+  z-index: 12;
 }
 @media screen and (min-width: 767.98px) {
   .modal {
@@ -327,7 +327,7 @@ img {
 }
 
 .header {
-  background-color: #fefefe;
+  background-color: #FEFEFE;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 
@@ -335,7 +335,7 @@ img {
   display: flex;
   justify-content: space-between;
   position: relative;
-  background-color: #fefefe;
+  background-color: #FEFEFE;
   max-width: 479.98px;
 }
 @media screen and (min-width: 767.98px) {
@@ -352,7 +352,7 @@ img {
 
 .open__menu {
   display: flex;
-  background-color: #fefefe;
+  background-color: #FEFEFE;
   border: none;
   margin-top: 22px;
   margin-bottom: 22px;
@@ -360,10 +360,7 @@ img {
 }
 
 .open-icon {
-  fill: #7eb101;
-}
-.open-icon:hover, .open-icon:focus {
-  fill: #ffe550;
+  fill: #7EB101;
 }
 
 .close__menu {
@@ -385,7 +382,7 @@ img {
   width: 130px;
   height: 255px;
   border-radius: 30px 0px 30px 30px;
-  background-color: #fefefe;
+  background-color: #FEFEFE;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   z-index: 10;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -399,7 +396,7 @@ img {
   padding: 16px 71px 16px 16px;
 }
 .mobile__menu--item:hover, .mobile__menu--item:focus {
-  background-color: #bbf330;
+  background-color: #BBF330;
 }
 
 .header-desktop {
@@ -419,33 +416,31 @@ img {
 }
 
 .mobile__menu--link {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.18;
-  color: #2c2c2c;
+  color: #2C2C2C;
 }
 
 .desktop__menu--list {
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.14;
-  color: #2c2c2c;
+  color: #2C2C2C;
   display: flex;
   gap: 28px;
 }
 
-.desktop__menu--item {
+.desktop__menu--link {
   font-weight: 400;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.desktop__menu--item:hover, .desktop__menu--item:focus {
-  color: #bbf330;
+.desktop__menu--link:hover, .desktop__menu--link:focus {
+  color: #BBF330;
   text-decoration: underline;
 }
 
 .desktop__menu--item-current {
   font-weight: 700;
-  color: #bbf330;
+  color: #BBF330;
   text-decoration: underline;
 }
 
@@ -454,26 +449,39 @@ img {
   justify-content: center;
   margin-left: 30px;
   padding: 6px 18px;
-  font-family: "Roboto", sans-serif;
   font-size: 13px;
   line-height: 1.5;
   font-weight: 500;
-  color: #2c2c2c;
-  background-color: #bbf330;
+  color: #2C2C2C;
+  background-color: #BBF330;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-button:hover {
-  background-color: #b5ff00;
+.header-button:hover, .header-button:focus {
+  background-color: #FFE550;
+}
+
+.headerbar {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 767.98px) {
+  .headerbar {
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1279.98px) {
+  .headerbar {
+    padding-top: 14px;
+  }
 }
 
 .headerbar__section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 60px;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -486,7 +494,6 @@ img {
 @media screen and (min-width: 1279.98px) {
   .headerbar__section {
     justify-content: space-between;
-    padding-top: 14px;
   }
 }
 
@@ -508,16 +515,15 @@ img {
   max-width: 280px;
   margin-bottom: 28px;
   font-weight: 700;
-  font-size: 27px;
-  line-height: 33px;
-  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  line-height: 1.17;
   color: #2C2C2C;
 }
 @media screen and (min-width: 767.98px) {
   .headerbar__title {
     position: absolute;
     font-size: 42px;
-    line-height: 1.2;
+    line-height: 1.19;
     max-width: 537px;
     margin-bottom: 0px;
     transform: translateY(-100%);
@@ -557,10 +563,8 @@ img {
 }
 
 .headerbar__button {
-  font-family: "Roboto", sans-serif;
   color: #2C2C2C;
   border: none;
-  margin-bottom: 50px;
   width: 98px;
   height: 32px;
   border-radius: 30px;
@@ -684,14 +688,14 @@ img {
 }
 @media screen and (min-width: 767.98px) {
   .offerings {
-    padding-top: 45px;
+    padding-top: 35px;
     padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1279.98px) {
   .offerings {
-    padding-top: 15px;
-    padding-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 43px;
   }
 }
 
@@ -711,18 +715,23 @@ img {
 
 .offerings__decor {
   display: flex;
-  margin-bottom: 60px;
   height: 309px;
   background-image: url(../images/offerings/apple320@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 280px 309px;
 }
+@media screen and (max-width: 767.98px) {
+  .offerings__decor {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 767.98px) {
   .offerings__decor {
     background-image: url(../images/offerings/appletab@1x.png);
     height: 394px;
     background-size: 704px 394px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1279.98px) {
@@ -731,7 +740,7 @@ img {
     height: 604px;
     background-size: 550px 604px;
     width: 50%;
-    margin-bottom: 43px;
+    margin-bottom: 0;
   }
 }
 
@@ -775,35 +784,57 @@ img {
   .offerings__intro {
     width: 500px;
     line-height: 1.14;
+    margin-bottom: 40px;
   }
 }
 
+.offerings__list {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 767.98px) {
+  .offerings__list {
+    flex-direction: column;
+  }
+}
 @media screen and (min-width: 767.98px) {
   .offerings__list {
-    display: flex;
     gap: 116px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1279.98px) {
   .offerings__list {
     gap: 67px;
+    margin-bottom: 32px;
   }
 }
 
 .offerings__item {
   width: 252px;
-  margin-bottom: 28px;
-}
-@media screen and (min-width: 767.98px) {
-  .offerings__item {
-    margin-bottom: 40px;
-  }
 }
 @media screen and (min-width: 1279.98px) {
   .offerings__item {
     width: calc((100% - 67px) / 2);
-    margin-bottom: 32px;
   }
+}
+
+.offerings__item::before {
+  display: inline-block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  margin-bottom: 8px;
+}
+
+.icon__devil::before {
+  background-image: url(../images/offerings/deliv.svg);
+}
+
+.icon__order::before {
+  background-image: url(../images/offerings/order.svg);
 }
 
 .offerings__icon {
@@ -815,8 +846,6 @@ img {
 
 .offerings__subtitle {
   margin-bottom: 16px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -862,7 +891,6 @@ img {
 }
 
 .offerings__link {
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   display: flex;
@@ -935,6 +963,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 767.98px) {
   .favorites__item {
@@ -1101,7 +1131,6 @@ img {
 }
 
 .customers-blocks__text {
-  font-family: "Roboto", sans-serif;
   margin-bottom: 40px;
   font-weight: 700;
   font-size: 16px;
@@ -1130,7 +1159,6 @@ img {
 
 .customers-blocks__name {
   margin-bottom: 2px;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
@@ -1139,7 +1167,6 @@ img {
 
 .customers-blocks__employment {
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 150%;
   color: #2C2C2C;
@@ -1294,7 +1321,6 @@ img {
   width: 100%;
   height: 42px;
   padding: 12px 11px;
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 1.5;
   color: #505050;
@@ -1320,7 +1346,6 @@ img {
 .subscribe-form__button {
   width: 103px;
   height: 42px;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
@@ -1328,11 +1353,11 @@ img {
   background: #BBF330;
   border: none;
   border-radius: 30px;
-  transition: background 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .subscribe-form__button:hover, .subscribe-form__button:focus, .subscribe-form__button:active {
-  background: #7EB101;
+  background-color: #7EB101;
 }
 
 .footer--fon {
@@ -1446,14 +1471,13 @@ img {
 
 .footer-navigation__item {
   color: rgb(0, 0, 0);
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
 }
-.footer-navigation__item:hover, .footer-navigation__item:focus {
+
+.footer-navigation__link:hover, .footer-navigation__link:focus {
   color: #BBF330;
-  text-decoration: underline;
 }
 
 .footer-navigation__item:not(:last-child) {
@@ -1485,7 +1509,6 @@ img {
 .subscribe-form__title {
   margin-bottom: 12px;
   color: #2C2C2C;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
@@ -1525,7 +1548,6 @@ img {
   margin-left: auto;
   margin-right: 0;
   color: #2C2C2C;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.54;
@@ -1549,7 +1571,6 @@ img {
 
 .subscribe-form__label {
   color: #2C2C2C;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1567,7 +1588,6 @@ img {
 
 .subscribe-form__label--link {
   color: #7EB101;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1601,7 +1621,6 @@ img {
 
 .extra-information__item {
   color: #7EB101;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
@@ -1624,7 +1643,6 @@ img {
   margin-right: auto;
   margin-left: auto;
   color: #2C2C2C;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;

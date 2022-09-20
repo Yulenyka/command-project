@@ -1,5 +1,5 @@
 .header {
-  background-color: #fefefe;
+  background-color: $primery-color;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 
@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  background-color: #fefefe;
+  background-color: $primery-color;
   max-width: $mob;
   @media screen and(min-width: $tab) {
     display: none;
@@ -22,7 +22,7 @@
 
 .open__menu {
   display: flex;
-  background-color: #fefefe;
+  background-color: $primery-color;
   border: none;
   margin-top: 22px;
   margin-bottom: 22px;
@@ -30,10 +30,10 @@
 }
 
 .open-icon {
-  fill: #7eb101;
-  &:hover, &:focus {
-    fill: #ffe550;
-  }
+  fill: $secondary-color;
+  // &:hover, &:focus {
+  //   fill: $main-color;
+  // }
 }
 
 .close__menu {
@@ -55,7 +55,7 @@
   width: 130px;
   height: 255px;
   border-radius: 30px 0px 30px 30px;
-  background-color: #fefefe;
+  background-color: $primery-color;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   z-index: 10;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,8 +67,8 @@
 .mobile__menu--item {
   font-weight: 400;
   padding: 16px 71px 16px 16px;
-  &:hover &:focus {
-    background-color: #bbf330;
+  &:hover, &:focus {
+    background-color: $accent-color;
   }
 }
 
@@ -87,37 +87,29 @@
 }
 
 .mobile__menu--link {
-  font-family: $basic;
   font-size: 16px;
   line-height: 1.18;
-  color: #2c2c2c;
+  color: $text-color;
 }
 
 .desktop__menu--list {
-  font-family: $basic;
   font-size: 14px;
   line-height: 1.14;
-  color: #2c2c2c;
+  color: $text-color;
   display: flex;
   gap: 28px;
 }
-
 .desktop__menu--link {
   font-weight: 400;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover, &:focus {
-    color: #bbf330;
+    color: $accent-color;
     text-decoration: underline;
   } 
 }
-
-// .desktop__menu--link:focus {
-//       color: #bbf330;
-// }
-
 .desktop__menu--item-current {
   font-weight: 700;
-  color: #bbf330;
+  color: $accent-color;
   text-decoration: underline;
 }
 
@@ -126,17 +118,16 @@
   justify-content: center;
   margin-left: 30px;
   padding: 6px 18px;
-  font-family: $basic;
   font-size: 13px;
   line-height: 1.5;
   font-weight: 500;
-  color: #2c2c2c;
-  background-color: #bbf330;
+  color: $text-color;
+  background-color: $accent-color;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover, &:focus {
-    background-color: #b5ff00;
+    background-color: $main-color;
   }
 }

@@ -1,8 +1,17 @@
+.headerbar {
+        padding-top: 60px;
+    padding-bottom: 50px;
+      @media screen and (min-width: $tab) {
+            padding-bottom: 0px;
+    }
+        @media screen and (min-width: $desk) {
+        padding-top: 14px;
+    }
+}
 .headerbar__section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 60px;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -13,7 +22,6 @@
 
     @media screen and (min-width: $desk) {
         justify-content: space-between;
-        padding-top: 14px;
     }
 }
 
@@ -32,15 +40,14 @@
     max-width: 280px;
     margin-bottom: 28px;
     font-weight: 700;
-    font-size: 27px;
-    line-height: 33px;
-    font-family: $basic; 
+    font-size: 28px;
+    line-height: 1.17;
     color: $text-color;
     
     @media screen and (min-width: $tab) {
         position: absolute;
         font-size: 42px;
-        line-height: 1.2;
+        line-height: 1.19;
         max-width: 537px;
         margin-bottom: 0px;
         transform: translateY(-100%);
@@ -77,10 +84,8 @@
 }
 
 .headerbar__button {
-    font-family: $basic; 
     color: $text-color;
     border: none;
-    margin-bottom: 50px;
     width: 98px;
     height: 32px;
     border-radius: 30px;
