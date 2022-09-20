@@ -214,8 +214,12 @@
 }
 .offerings__item{
     width: 252px;
+    margin-bottom: 28px;
+@media screen and (min-width: $tab) {
+    margin-bottom: 0;}
 @media screen and (min-width: $desk){
-    width: calc((100% - 67px)/2);}
+    width: calc((100% - 67px)/2);
+    margin-bottom: 0;}
 }
 .offerings__item::before {
     display: inline-block;
@@ -223,7 +227,7 @@
     width: 48px;
     height: 48px;
     background-size: contain;
-    
+    margin-bottom: 8px;
 }
 .icon__devil::before{
     background-image: url(/src/images/offerings/deliv.svg);
