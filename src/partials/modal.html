@@ -1,0 +1,27 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal__btn" type="button" data-modal-close>
+        <svg class="icon__close" width="24" height="24">
+          <use href="./images/modal/modal.svg#close"></use>
+        </svg>
+      </button>
+      <p class="modal-form__title">Order Form</p>
+      <form class="modal-form" autocomplete="on">
+        <div class="modal-form__group" >
+          <label class="modal-form__field" for="name">
+            <span class="modal-form__label">Name</span>
+            <input class="modal-form__input" type="text" name="name" placeholder="Your name" minlength="3" maxlength="25" required/>
+          </label>
+          <label class="modal-form__field" for="tel">
+            <span class="modal-form__label">Phone number</span>
+            <input class="modal-form__input" type="tel" name="tel" placeholder="+38(0_ _) _ _ _   _ _   _ _" minlength="10" maxlength="10" required/>
+          </label>
+          <label class="modal-form__field" for="email">
+            <span class="modal-form__label">E-mail</span>
+            <input class="modal-form__input" type="email" name="email" placeholder="example@gmail.com" required/>
+          </label>
+        </div>
+        <button class="modal-form__btn" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
