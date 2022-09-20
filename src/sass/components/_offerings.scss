@@ -54,17 +54,17 @@
   }
 }
 .offerings {
-    @media screen and (max-width: $tab) {
-        padding-top: 45px;
-        padding-bottom: 60px;
-    }
-  @media screen and (min-width: $tab) {
+  @media screen and (max-width: $tab) {
     padding-top: 45px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $tab) {
+    padding-top: 35px;
     padding-bottom: 100px;
   }
   @media screen and (min-width: $desk) {
-    padding-top: 15px;
-        padding-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 43px;
   }
 }
 .offerings__position {
@@ -82,23 +82,26 @@
 
 .offerings__decor {
   display: flex;
-  margin-bottom: 60px;
   height: 309px;
   background-image: url(../images/offerings/apple320@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 280px 309px;
+  @media screen and (max-width: $tab) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: $tab) {
     background-image: url(../images/offerings/appletab@1x.png);
     height: 394px;
     background-size: 704px 394px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: $desk) {
     background-image: url(../images/offerings/appledesk@1x.png);
     height: 604px;
     background-size: 550px 604px;
     width: 50%;
-    margin-bottom: 43px;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: $tab) {
@@ -152,27 +155,44 @@
   @media screen and (min-width: $tab) {
     width: 500px;
     line-height: 1.14;
+    margin-bottom: 40px;
   }
 }
 .offerings__list {
+  display: flex;
+    gap: 28px;
+  margin-bottom: 32px;
+   @media screen and (max-width: $tab) {
+    flex-direction: column;
+  }
   @media screen and (min-width: $tab) {
-    display: flex;
     gap: 116px;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: $desk) {
     gap: 67px;
+    margin-bottom: 32px;
   }
 }
 .offerings__item {
   width: 252px;
-  margin-bottom: 28px;
-  @media screen and (min-width: $tab) {
-    margin-bottom: 40px;
-  }
   @media screen and (min-width: $desk) {
     width: calc((100% - 67px) / 2);
-    margin-bottom: 32px;
   }
+}
+.offerings__item::before {
+  display: inline-block;
+  content: '';
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  margin-bottom: 8px;
+}
+.icon__devil::before {
+  background-image: url(../images/offerings/deliv.svg);
+}
+.icon__order::before {
+  background-image: url(../images/offerings/order.svg);
 }
 .offerings__icon {
   display: block;
@@ -182,8 +202,6 @@
 }
 .offerings__subtitle {
   margin-bottom: 16px;
-  font-family: $basic;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -221,7 +239,6 @@
   }
 }
 .offerings__link {
-  font-family: $basic;
   font-size: 14px;
   line-height: 1.5;
   display: flex;
