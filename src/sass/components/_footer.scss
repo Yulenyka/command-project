@@ -1,5 +1,5 @@
 .footer--fon {
-  background: #fefefe;
+  background: $primery-color;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -180,6 +180,7 @@
   border: 1px solid $secondary-color;
   border-radius: 30px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 
   &:hover,
   &:focus {
