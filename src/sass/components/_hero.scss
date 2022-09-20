@@ -90,6 +90,7 @@
     font-size: 13px;
     background: $accent-color;
     cursor: pointer;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
@@ -108,8 +109,7 @@
 .mySwiper {
     display: none;
     margin: 0;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: $tab) {
     display: flex;
     margin-top: 89px;

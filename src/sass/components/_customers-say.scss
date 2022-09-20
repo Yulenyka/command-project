@@ -55,8 +55,13 @@
 }
 .customers {
     padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: $desk) {
+    padding-bottom: 100px;
+  }
     @media screen and (min-width: $desk) {
     padding-top: 100px;
+    padding-bottom: 120px;
   }
 }
 
@@ -82,7 +87,7 @@
 .customers-blocks__item {
   width: 280px;
   padding: 8px;
-  background: #ffffff;
+  background: $primery-color;
   border-radius: 0px 30px 30px 30px;
 
   @media screen and (max-width: $tab) {
@@ -121,7 +126,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
-  color: #2c2c2c;
+  color:$text-color;
 
   @media screen and (min-width: $tab) {
     font-size: 18px;
@@ -132,6 +137,9 @@
 .customers-blocks__link{
   display: flex;
   width: 160px;
+  height: 52px;
+
+
 }
 
 .customers-personabout{
@@ -148,7 +156,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
-  color: #2c2c2c;
+  color: $text-color;
 }
 
 .customers-blocks__employment {
@@ -156,6 +164,6 @@
   font-family: $basic;
   font-size: 14px;
   line-height: 150%;
-  color: #2c2c2c;
+  color: $text-color;
 }
 
