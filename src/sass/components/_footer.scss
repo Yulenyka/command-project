@@ -119,17 +119,18 @@
     margin-right: 28px;
   }
 }
-
-.subscribe-form {
-  flex-direction: column;
-  margin-bottom: 60px;
-  @media screen and (min-width: $tab) {
+.footer-form {
+    @media screen and (min-width: $tab) {
     margin-bottom: 100px;
   }
 
   @media screen and (min-width: $desk) {
     margin-bottom: 80px;
   }
+}
+.subscribe-form {
+  flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .subscribe-form__title {
@@ -244,9 +245,13 @@
   color: $secondary-color;
   font-family: $basic;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 10px;
+  line-height: 1.2;
   text-decoration-line: underline;
+   @media screen and (min-width: $tab) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .extra-information__item:not(:last-child) {
