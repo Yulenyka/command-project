@@ -198,25 +198,38 @@
 @media screen and (min-width: $tab) {
     width: 500px;
     line-height: 1.14;
-
+    margin-bottom: 40px;
 }
 }
 .offerings__list{
+    margin-bottom: 28px;
     @media screen and (min-width: $tab){
     display: flex;
-    gap: 116px;}
+    gap: 116px;
+    margin-bottom: 40px;}
     @media screen and (min-width: $desk){
     gap: 67px;
+    margin-bottom: 32px;
     }
 }
 .offerings__item{
     width: 252px;
-    margin-bottom: 28px;
-@media screen and (min-width: $tab){
-    margin-bottom: 40px;}
 @media screen and (min-width: $desk){
-    width: calc((100% - 67px)/2);
-    margin-bottom: 32px;}
+    width: calc((100% - 67px)/2);}
+}
+.offerings__item::before {
+    display: inline-block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    
+}
+.icon__devil::before{
+    background-image: url(/src/images/offerings/deliv.svg);
+}
+.icon__order::before {
+    background-image: url(/src/images/offerings/order.svg);
 }
 .offerings__icon{
     display: block;
