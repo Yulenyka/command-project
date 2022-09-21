@@ -2,42 +2,103 @@
   background: $primery-color;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   background-repeat: no-repeat;
-  background-position: bottom center;
-  @media screen and (max-width: $tab) {
-    background-size: 100% 619px;
-    background-image: url('../images/footer/bcgmob1x.jpg');
-    @media (min-device-pixel-ratio: 2),
-      screen and (o-min-device-pixel-ratio: 2/1),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/footer/bcgmob2x.jpg');
-    }
+  background-image: url('../images/footer/bg-mob-button-1x.webp'),
+    url('../images/footer/bg-mob-left-1x.webp'),
+    url('../images/footer/bg-mob-right-1x.webp');
+  background-size: 253px 66px, 110px 116px, 104px 259px;
+  background-position: bottom center, top 132px left, top right;
+  @media (min-device-pixel-ratio: 2),
+    screen and (o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/footer/bg-mob-button-2x.webp'),
+      url('../images/footer/bg-mob-left-2x.webp'),
+      url('../images/footer/bg-mob-right-2x.webp');
   }
 
   @media screen and (min-width: $tab) {
-    background-size: 100% 506px;
-    background-image: url('../images/footer/bcgtab1x.jpg');
-
+    background-image: url('../images/footer/bg-mob-button-2x.webp'),
+      url('../images/footer/bg-tab-button-1-1x.webp'),
+      url('../images/footer/bg-tab-button-2-1x.webp'),
+      url('../images/footer/bg-tab-right-1x.webp');
+    background-size: 542px 141px, 184px 58px, 170px 69px, 203px 365px;
+    background-position: bottom center, bottom left -10px, bottom right,
+      top right;
     @media (min-device-pixel-ratio: 2),
       screen and (o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/footer/bcgtab2x.jpg');
+      background-image: url('../images/footer/bg-mob-button-3x.webp'),
+        url('../images/footer/bg-tab-button-1-2x.webp'),
+        url('../images/footer/bg-tab-button-2-2x.webp'),
+        url('../images/footer/bg-tab-right-2x.webp');
     }
   }
-
   @media screen and (min-width: $desk) {
-    background-size: 100% 266px;
-    background-image: url('../images/footer/bcgdesk1x.jpg');
+    background-image: url('../images/footer/bg-desk-1x.webp'),
+      url('../images/footer/bg-desk-left-1x.webp'),
+      url('../images/footer/bg-desk-right-1x.webp');
+    background-size: 1211px 266px, 196px 62px, 181px 73px;
+    background-position: bottom center, bottom left -10px, bottom right;
 
     @media (min-device-pixel-ratio: 2),
       screen and (o-min-device-pixel-ratio: 2/1),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/footer/bcgdesk2x.jpg');
+      background-image: url('../images/footer/bg-desk-2x.webp'),
+        url('../images/footer/bg-desk-left-2x.webp'),
+        url('../images/footer/bg-desk-right-2x.webp');
+    }
+    @media (min-device-pixel-ratio: 3),
+      screen and (o-min-device-pixel-ratio: 3/1),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('../images/footer/bg-desk-3x.webp'),
+        url('../images/footer/bg-desk-left-3x.webp'),
+        url('../images/footer/bg-desk-right-3x.webp');
     }
   }
 }
+// .footer--fon {
+//   background: $primery-color;
+//   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+//   background-repeat: no-repeat;
+//   background-position: bottom center;
+//   @media screen and (max-width: $tab) {
+//     background-size: 100% 619px;
+//     background-image: url('../images/footer/bcgmob1x.jpg');
+//     @media (min-device-pixel-ratio: 2),
+//       screen and (o-min-device-pixel-ratio: 2/1),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url('../images/footer/bcgmob2x.jpg');
+//     }
+//   }
+
+//   @media screen and (min-width: $tab) {
+//     background-size: 100% 506px;
+//     background-image: url('../images/footer/bcgtab1x.jpg');
+
+//     @media (min-device-pixel-ratio: 2),
+//       screen and (o-min-device-pixel-ratio: 2/1),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url('../images/footer/bcgtab2x.jpg');
+//     }
+//   }
+
+//   @media screen and (min-width: $desk) {
+//     background-size: 100% 266px;
+//     background-image: url('../images/footer/bcgdesk1x.jpg');
+
+//     @media (min-device-pixel-ratio: 2),
+//       screen and (o-min-device-pixel-ratio: 2/1),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url('../images/footer/bcgdesk2x.jpg');
+//     }
+//   }
+// }
 
 .container.footer-menu {
   @media screen and (max-width: $mob) {
@@ -111,8 +172,9 @@
 }
 
 .footer-navigation__link {
-  &:hover, &:focus {
-    color: #BBF330;
+  &:hover,
+  &:focus {
+    color: #bbf330;
   }
 }
 
@@ -125,7 +187,7 @@
   }
 }
 .footer-form {
-    @media screen and (min-width: $tab) {
+  @media screen and (min-width: $tab) {
     margin-bottom: 100px;
   }
 
@@ -249,7 +311,7 @@
   font-size: 10px;
   line-height: 1.2;
   text-decoration-line: underline;
-   @media screen and (min-width: $tab) {
+  @media screen and (min-width: $tab) {
     font-size: 12px;
     line-height: 1.17;
   }
