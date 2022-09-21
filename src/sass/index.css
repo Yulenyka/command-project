@@ -225,6 +225,14 @@ body {
   background-color: #FEFEFE;
   font-family: "Roboto", sans-serif;
 }
+body.modal-open {
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  body.scrol-off {
+    overflow: hidden;
+  }
+}
 
 ul {
   list-style: none;
@@ -1364,39 +1372,42 @@ img {
   background: #FEFEFE;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-image: url("../images/footer/bg-mob-button-1x.webp"), url("../images/footer/bg-mob-left-1x.webp"), url("../images/footer/bg-mob-right-1x.webp");
+  background-size: 253px 66px, 110px 116px, 104px 259px;
+  background-position: bottom center, top 132px left, top right;
 }
-@media screen and (max-width: 767.98px) {
+@media (min-device-pixel-ratio: 2), screen and (o-min-device-pixel-ratio: 2/1), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .footer--fon {
-    background-size: 100% 619px;
-    background-image: url("../images/footer/bcgmob1x.jpg");
-  }
-}
-@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (o-min-device-pixel-ratio: 2/1), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
-  .footer--fon {
-    background-image: url("../images/footer/bcgmob2x.jpg");
+    background-image: url("../images/footer/bg-mob-button-2x.webp"), url("../images/footer/bg-mob-left-2x.webp"), url("../images/footer/bg-mob-right-2x.webp");
   }
 }
 @media screen and (min-width: 767.98px) {
   .footer--fon {
-    background-size: 100% 506px;
-    background-image: url("../images/footer/bcgtab1x.jpg");
+    background-image: url("../images/footer/bg-mob-button-2x.webp"), url("../images/footer/bg-tab-button-1-1x.webp"), url("../images/footer/bg-tab-button-2-1x.webp"), url("../images/footer/bg-tab-right-1x.webp");
+    background-size: 542px 141px, 184px 58px, 170px 69px, 203px 365px;
+    background-position: bottom center, bottom left -10px, bottom right, top right;
   }
 }
 @media screen and (min-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 767.98px) and (o-min-device-pixel-ratio: 2/1), screen and (min-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767.98px) and (min-resolution: 192dpi), screen and (min-width: 767.98px) and (min-resolution: 2dppx) {
   .footer--fon {
-    background-image: url("../images/footer/bcgtab2x.jpg");
+    background-image: url("../images/footer/bg-mob-button-3x.webp"), url("../images/footer/bg-tab-button-1-2x.webp"), url("../images/footer/bg-tab-button-2-2x.webp"), url("../images/footer/bg-tab-right-2x.webp");
   }
 }
 @media screen and (min-width: 1279.98px) {
   .footer--fon {
-    background-size: 100% 266px;
-    background-image: url("../images/footer/bcgdesk1x.jpg");
+    background-image: url("../images/footer/bg-desk-1x.webp"), url("../images/footer/bg-desk-left-1x.webp"), url("../images/footer/bg-desk-right-1x.webp");
+    background-size: 1211px 266px, 196px 62px, 181px 73px;
+    background-position: bottom center, bottom left -10px, bottom right;
   }
 }
 @media screen and (min-width: 1279.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 1279.98px) and (o-min-device-pixel-ratio: 2/1), screen and (min-width: 1279.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1279.98px) and (min-resolution: 192dpi), screen and (min-width: 1279.98px) and (min-resolution: 2dppx) {
   .footer--fon {
-    background-image: url("../images/footer/bcgdesk2x.jpg");
+    background-image: url("../images/footer/bg-desk-2x.webp"), url("../images/footer/bg-desk-left-2x.webp"), url("../images/footer/bg-desk-right-2x.webp");
+  }
+}
+@media screen and (min-width: 1279.98px) and (min-device-pixel-ratio: 3), screen and (min-width: 1279.98px) and (o-min-device-pixel-ratio: 3/1), screen and (min-width: 1279.98px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1279.98px) and (min-resolution: 288dpi), screen and (min-width: 1279.98px) and (min-resolution: 3dppx) {
+  .footer--fon {
+    background-image: url("../images/footer/bg-desk-3x.webp"), url("../images/footer/bg-desk-left-3x.webp"), url("../images/footer/bg-desk-right-3x.webp");
   }
 }
 
@@ -1477,7 +1488,7 @@ img {
 }
 
 .footer-navigation__link:hover, .footer-navigation__link:focus {
-  color: #BBF330;
+  color: #bbf330;
 }
 
 .footer-navigation__item:not(:last-child) {
